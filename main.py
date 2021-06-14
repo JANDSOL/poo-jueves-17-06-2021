@@ -62,11 +62,18 @@ class LoopFor:
         #     print(" ! Dato:", dato)
 
         # exercise 9
-        print("~ 9Exercise.")
-        print(" / Diccionario de notas.")
-        print(end="    ")
-        for key, value in teacher.items():
-            print(key + ":" + str(value), end="; ")
+        # print("~ 9Exercise.")
+        # print(" / Diccionario de notas.")
+        # print(end="    ")
+        # for key, value in teacher.items():
+        #     print(key + ":" + str(value), end="; ")
+        
+        # exercise 10
+        print("~ 10Exercise.")
+        print(end="   ")
+        for student in list_students:
+            for key, value in student.items():
+                print(key + ":" + str(value), end="; ")
 
 
 use_of_for = LoopFor()
