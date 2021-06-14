@@ -21,9 +21,14 @@ class LoopFor:
         #     print(" ! Número de i: {}".format(i))
         
         # exercise 3
-        print("~ 3Exercise.")
-        for i in range(4, 10, 2):
-            print(" ! Número de i: {}".format(i))
+        # print("~ 3Exercise.")
+        # for i in range(4, 10, 2):
+        #     print(" ! Número de i: {}".format(i))
+
+        # exercise 4
+        print("~ 4Exercise.")
+        for i in range(12, 3, -3):
+            print(" Número de i: {}".format(i), end=";")
 
 
 use_of_for = LoopFor()
