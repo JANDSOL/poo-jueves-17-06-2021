@@ -16,8 +16,13 @@ class LoopFor:
         #     print(" ! Número de i: {}".format(i))
         
         # exercise 2
-        print("~ 2Exercise.")
-        for i in range(2, 10):
+        # print("~ 2Exercise.")
+        # for i in range(2, 10):
+        #     print(" ! Número de i: {}".format(i))
+        
+        # exercise 3
+        print("~ 3Exercise.")
+        for i in range(4, 10, 2):
             print(" ! Número de i: {}".format(i))
 
 
