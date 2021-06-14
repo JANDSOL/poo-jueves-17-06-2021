@@ -45,9 +45,14 @@ class LoopFor:
         #     print(" For datos[{}]:".format(i), data[i], end="; ")
 
         # exercise 6
-        print("~ 6Exercise.")
-        for i, dato in enumerate(numbers):
-            print(" For:", i, dato)
+        # print("~ 6Exercise.")
+        # for i, dato in enumerate(numbers):
+        #     print(" For:", i, dato)
+        
+        # exercise 7
+        print("~ 7Exercise.")
+        for dato in numbers:
+            print(" ! Dato:", dato)
 
 
 use_of_for = LoopFor()
