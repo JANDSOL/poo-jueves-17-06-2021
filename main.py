@@ -7,8 +7,10 @@ class LoopFor:
         name = "Daniel"
         data = ["Daniel", 50, True]
         numbers = (2, 5.6, 4, 1)
-        teacher = [{"nombre": "Erick", "final": 70}, {"nombre": "Yady", "final": 60},\
-                   {"nombre": "Danny", "final": 90}]
+        teacher = {"nombre": "Daniel", "edad": 50, "fac": "faci"}
+        list_notes = [(30, 40), [20, 40] ,(50, 40)]
+        list_students = [{"nombre": "Erick", "final": 70}, {"nombre": "Yady", "final": 60},\
+                         {"nombre": "Danny", "final": 90}]
         
         # exercise 1
         # print("~ 1Exercise.")
@@ -55,9 +57,16 @@ class LoopFor:
         #     print(" ! Dato:", dato)
         
         # exercise 8
-        print("~ 8Exercise.")
-        for dato in ['H', 'o', 'l', 'a', 'que', 'tal']:
-            print(" ! Dato:", dato)
+        # print("~ 8Exercise.")
+        # for dato in ['H', 'o', 'l', 'a', 'que', 'tal']:
+        #     print(" ! Dato:", dato)
+
+        # exercise 9
+        print("~ 9Exercise.")
+        print(" / Diccionario de notas.")
+        print(end="    ")
+        for key, value in teacher.items():
+            print(key + ":" + str(value), end="; ")
 
 
 use_of_for = LoopFor()
