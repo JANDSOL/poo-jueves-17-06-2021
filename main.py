@@ -36,13 +36,18 @@ class LoopFor:
         # print(data[1])
         # print(data[2])
         j = 0
-        print("~ 5Exercise.")
-        while j < length:
-            print(" While datos[{}]:".format(j), data[j], end="; ")
-            j += 1
-        print("")
-        for i in range(length-1, -1, -1):
-            print(" For datos[{}]:".format(i), data[i], end="; ")
+        # print("~ 5Exercise.")
+        # while j < length:
+        #     print(" While datos[{}]:".format(j), data[j], end="; ")
+        #     j += 1
+        # print("")
+        # for i in range(length-1, -1, -1):
+        #     print(" For datos[{}]:".format(i), data[i], end="; ")
+
+        # exercise 6
+        print("~ 6Exercise.")
+        for i, dato in enumerate(numbers):
+            print(" For:", i, dato)
 
 
 use_of_for = LoopFor()
