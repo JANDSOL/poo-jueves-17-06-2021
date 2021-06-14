@@ -50,8 +50,13 @@ class LoopFor:
         #     print(" For:", i, dato)
         
         # exercise 7
-        print("~ 7Exercise.")
-        for dato in numbers:
+        # print("~ 7Exercise.")
+        # for dato in numbers:
+        #     print(" ! Dato:", dato)
+        
+        # exercise 8
+        print("~ 8Exercise.")
+        for dato in ['H', 'o', 'l', 'a', 'que', 'tal']:
             print(" ! Dato:", dato)
 
 
