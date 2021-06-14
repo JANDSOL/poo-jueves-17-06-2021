@@ -26,9 +26,23 @@ class LoopFor:
         #     print(" ! Número de i: {}".format(i))
 
         # exercise 4
-        print("~ 4Exercise.")
-        for i in range(12, 3, -3):
-            print(" Número de i: {}".format(i), end=";")
+        # print("~ 4Exercise.")
+        # for i in range(12, 3, -3):
+        #     print(" Número de i: {}".format(i), end=";")
+
+        # exercise 5
+        length = len(data)
+        # print(data[0])
+        # print(data[1])
+        # print(data[2])
+        j = 0
+        print("~ 5Exercise.")
+        while j < length:
+            print(" While datos[{}]:".format(j), data[j], end="; ")
+            j += 1
+        print("")
+        for i in range(length-1, -1, -1):
+            print(" For datos[{}]:".format(i), data[i], end="; ")
 
 
 use_of_for = LoopFor()
