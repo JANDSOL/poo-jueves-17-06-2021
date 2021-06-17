@@ -8,8 +8,6 @@ class LoopFor:
         data = ["Daniel", 50, True]
         numbers = (2, 5.6, 4, 1)
         teacher = {"nombre": "Daniel", "edad": 50, "fac": "faci"}
-        list_students = [{"nombre": "Erick", "final": 70}, {"nombre": "Yady", "final": 60},\
-                         {"nombre": "Danny", "final": 90}]
         
         # exercise 1
         # print("~ 1Exercise.")
@@ -75,21 +73,36 @@ class LoopFor:
         #         print(key + ":" + str(value), end="; ")
 
         # exercise 11
-        list_notes = [(30, 40), [20, 40] ,(50, 40)]
-        print("~ 11Exercise.")
+        # list_notes = [(30, 40), [20, 40] ,(50, 40)]
+        # print("~ 11Exercise.")
+        # accum = 0
+        # length = 0
+        # for notes in list_notes:
+        #     partial = 0
+        #     print("  ", notes, end="")
+        #     for note in notes:
+        #         length += 1
+        #         accum += note
+        #         partial += note
+        #     partial_aver = partial/len(notes)
+        #     print("\n ! Notas Parciales= {}; Promedio Parcial= {}".format(partial, partial_aver))
+        # average = round((accum/length), 2)
+        # print(" ! Total notas= {} - #Notas= {}; Promedio= {}".format(accum, length, average))
+
+        # exercise 12
+        print("~ 12Exercise.")
+        list_students = [{"nombre": "Erick", "final": 70}, {"nombre": "Yady", "final": 60},\
+                         {"nombre": "Danny", "final": 90}]
         accum = 0
-        length = 0
-        for notes in list_notes:
-            partial = 0
-            print("  ", notes, end="")
-            for note in notes:
-                length += 1
-                accum += note
-                partial += note
-            partial_aver = partial/len(notes)
-            print("\n ! Notas Parciales= {}; Promedio Parcial= {}".format(partial, partial_aver))
-        average = round((accum/length), 2)
-        print(" ! Total notas= {} - #Notas= {}; Promedio= {}".format(accum, length, average))
+        counter = 0
+        for students in list_students:
+            print(" !", students)
+            for key, value in students.items():
+                print("  ", key, ":", value, end="")
+                if key == "final": accum += value
+                print("")
+            counter += 1
+        print("  ", round((accum/counter), 2))
 
 
 use_of_for = LoopFor()
