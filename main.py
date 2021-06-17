@@ -90,19 +90,29 @@ class LoopFor:
         # print(" ! Total notas= {} - #Notas= {}; Promedio= {}".format(accum, length, average))
 
         # exercise 12
-        print("~ 12Exercise.")
-        list_students = [{"nombre": "Erick", "final": 70}, {"nombre": "Yady", "final": 60},\
-                         {"nombre": "Danny", "final": 90}]
-        accum = 0
-        counter = 0
-        for students in list_students:
-            print(" !", students)
-            for key, value in students.items():
-                print("  ", key, ":", value, end="")
-                if key == "final": accum += value
-                print("")
-            counter += 1
-        print("  ", round((accum/counter), 2))
+        # print("~ 12Exercise.")
+        # list_students = [{"nombre": "Erick", "final": 70}, {"nombre": "Yady", "final": 60},\
+        #                  {"nombre": "Danny", "final": 90}]
+        # accum = 0
+        # counter = 0
+        # for students in list_students:
+        #     print(" !", students)
+        #     for key, value in students.items():
+        #         print("  ", key, ":", value, end="")
+        #         if key == "final": accum += value
+        #         print("")
+        #     counter += 1
+        # print("  ", round((accum/counter), 2))
+
+        # exercise 13
+        print("~ 13Exercise.")
+        # sentence = "Hola como estas"
+        # vowels = []
+        # for car in sentence:
+        #     if car in ('a', 'e', 'i', 'o', 'u'):
+        #         vowels.append(car)
+        # print(" !", vowels)
+        print(" !", [car for car in "Hola como estas" if car in ('a', 'e', 'i', 'o', 'u')])
 
 
 use_of_for = LoopFor()
