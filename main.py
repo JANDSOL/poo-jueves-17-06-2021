@@ -8,7 +8,6 @@ class LoopFor:
         data = ["Daniel", 50, True]
         numbers = (2, 5.6, 4, 1)
         teacher = {"nombre": "Daniel", "edad": 50, "fac": "faci"}
-        list_notes = [(30, 40), [20, 40] ,(50, 40)]
         list_students = [{"nombre": "Erick", "final": 70}, {"nombre": "Yady", "final": 60},\
                          {"nombre": "Danny", "final": 90}]
         
@@ -33,11 +32,11 @@ class LoopFor:
         #     print(" Número de i: {}".format(i), end=";")
 
         # exercise 5
-        length = len(data)
+        # length = len(data)
         # print(data[0])
         # print(data[1])
         # print(data[2])
-        j = 0
+        # j = 0
         # print("~ 5Exercise.")
         # while j < length:
         #     print(" While datos[{}]:".format(j), data[j], end="; ")
@@ -69,11 +68,28 @@ class LoopFor:
         #     print(key + ":" + str(value), end="; ")
         
         # exercise 10
-        print("~ 10Exercise.")
-        print(end="   ")
-        for student in list_students:
-            for key, value in student.items():
-                print(key + ":" + str(value), end="; ")
+        # print("~ 10Exercise.")
+        # print(end="   ")
+        # for student in list_students:
+        #     for key, value in student.items():
+        #         print(key + ":" + str(value), end="; ")
+
+        # exercise 11
+        list_notes = [(30, 40), [20, 40] ,(50, 40)]
+        print("~ 11Exercise.")
+        accum = 0
+        length = 0
+        for notes in list_notes:
+            partial = 0
+            print("  ", notes, end="")
+            for note in notes:
+                length += 1
+                accum += note
+                partial += note
+            partial_aver = partial/len(notes)
+            print("\n ! Notas Parciales= {}; Promedio Parcial= {}".format(partial, partial_aver))
+        average = round((accum/length), 2)
+        print(" ! Total notas= {} - #Notas= {}; Promedio= {}".format(accum, length, average))
 
 
 use_of_for = LoopFor()
